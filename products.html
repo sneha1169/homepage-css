@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Icecream Store</title>
+    <style>
+        /* Global Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff8f0;
+            color: #333;
+            padding: 20px;
+        }
+
+        /* Header Styling */
+        header {
+            background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 3em;
+            color: #fff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Navigation Styling */
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-weight: 600;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 25px;
+            background-color: #ff6f91;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #ff9671;
+            transform: scale(1.1);
+        }
+
+        /* Table Styling */
+        table {
+            width: 90%;
+            border-collapse: collapse;
+            margin: 30px auto;
+            background-color: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #ff6f91;
+            color: white;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #fff0f3;
+        }
+
+        tr:hover {
+            background-color: #ffe2e9;
+            transform: scale(1.02);
+            transition: all 0.3s ease-in-out;
+        }
+
+        td img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        td img:hover {
+            transform: scale(1.2);
+        }
+
+        td:nth-child(3) {
+            font-weight: bold;
+            color: #ff6f91;
+            font-size: 1.1em;
+        }
+        /* Footer Styling */
+        footer {
+            background-color: #ff6f91;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+            border-radius: 10px;
+        }
+        footer p{
+            font-size: 1em;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 15px;
+            }
+            table{
+                width: 100%;
+            }
+            td img{
+                width: 60px;
+                height: 60px;
+            }
+            }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <td align="center"><a href="index.html"><b>Home</b></a></td>
+                <td align="center"><a href="products.html"><b>Products</b></a></td>
+                <td align="center"><a href="contact.html"><b>Contact Us</b></a></td>
+                <td align="center"><a href="aboutUs.html"><b>About Us</b></a></td>
+            </ul>
+        </nav>
+        <h1>Our Icecream Flavors</h1>
+    </header>
+    <div align="center">
+    <table border="1">
+        <tr>
+            <th>Cream Flavors</th>
+            <th>Image</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Chocolate</td>
+            <td><img src="chocolate.jpg" alt="Chocolate" width="100"></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td>Vanilla</td>
+            <td><img src="vanilla.jpg" alt="Vanilla" width="100"></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td>Strawberry</td>
+            <td><img src="strawberry.jpg" alt="Strawberry" width="100"></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td>Mint Chocolate Chip</td>
+            <td><img src="mintchocolate.jpg" alt="Mint Chocolate Chip" width="100"></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;13$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td>Chocolate Chip Cookie Dough</td>
+            <td><img src="chocolatechip.jpg" alt="Chocolate Chip Cookie Dough" width="100"></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;22$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td>Coffee</td>
+            <td><img src="coffee.jpg" alt="Coffee" width="100"></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td>Vanilla Chip</td>
+            <td><img src="vanillachip.jpg" alt="Vanilla Chip" width="100"></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;25$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td>Butterscotch</td>
+            <td><img src="butterscotch.jpg" alt="Butterscotch" width="100"></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+    </table>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Icecream Store</p>
+    </footer>
+</body>
+</html>
